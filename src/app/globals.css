@@ -2,21 +2,158 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+* {
+  margin: 0%;
+  padding: 0%;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+.header {
+  background-color:aliceblue;
+  color: black;
+  position: fixed;
+  width: 100%;
+  padding-top: 0;
+  display: flex;
+ }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+
+}
+
+.navBar{
+  width: 500px;
+ margin-left: 600px;
+
+}
+.logo{
+  margin: 0;
+  padding: 0%;
+}
+
+.head-button {
+  display: flex;
+ font-weight: bold;
+  font-size: 25px;
+  padding: 4px;
+  gap: 50px;
+  margin-top: 20px;
+  padding-bottom: 2px;
+ 
+  align-items: end;
+
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  display: flex;
+ 
+}
+
+.footer {
+  background-color:  aliceblue;
+  color: black;
+  /* border: 3px solid rgb(23, 22, 24); */
+  margin-top: 40px;
+  display: flex;
+  justify-content: last baseline;
+  align-items: end;
+  margin-top: auto;
+
+}
+.courses{
+  padding-top: 60px;
+}
+.contact{
+  padding-top: 60px;
+}
+.aboutUs {
+  padding-top: 60px;
+}
+.banner {
+  padding-top: 60px;
+  margin-top: 30px;
+  margin-left: 177px;
+
+}
+.updateButton {
+  width: 100px;
+  height: 50px;
+  color: black;
+  background-color: rgb(53, 157, 248);
+  margin-bottom: 40px;
+  text-align: center;
+ margin-left: 600px;
+ border-radius: 3px;
+}
+.updateButton:hover{
+  background-color: rgb(125, 126, 128);
+  color: aliceblue;
+}
+.headings {
+  background-color: black;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 38px;
+}
+.collectHeading{
+  padding-top: 150px;
+  font-size: 40px;
+  color: rgb(9, 134, 243);
+}
+.collectionImage{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+
+}
+.footer-button {
+  display: flex;
+  justify-content:first baseline ;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  gap: 100px;
+  width: 100%;
+  height: 100px;
+
+}
+
+
+p {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+h1{
+  font-size: 30px;
+}
+.image{
+  margin-bottom: 10px;
+  width: 100%;
+  height:400px;
+}
+.icon {
+  margin: 15px;
+  margin-left: 50px;
+}
+.contacts{
+ 
+  margin-right: 100px;
+  margin-top: 30px;
+ padding: 5px;
+ font-size: 19px;
+ gap: 20px;
+ ;
+}
+body {
+  /* color: var(--foreground); */
+  /* background: var(--background); */
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -24,4 +161,97 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.parentContainer {
+  width: 100%;
+  height: 100vh;
+ 
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  border: 1px solid rgb(169, 208, 241);
+  /* align-items: center; */
+}
+
+.childContainer {
+  width: 320px;
+  height: 430px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 10px;
+  transition-duration: 0.5s;
+  border: 3px solid white;
+}
+
+.childContainer:hover {
+  border: 3px solid  rgb(85, 171, 247);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.imageContainer {
+  width: 90%;
+  height: 200px;
+  background-color: rgb(13, 111, 197);
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-left: 12px;
+ 
+}
+.hImage{
+  width:257px ;
+  height:200px;
+  
+}
+.image {
+  width: 150px;
+  height: 150px;
+}
+.title {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.description {
+  font-size: 15px;
+}
+
+.clickMe {
+  width: 40%;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid rgb(8, 75, 134);
+  font-size: 10px;
+  color:rgb(9, 37, 61);
+  border-radius: 10px;
+  padding: 5px;
+  transition-duration: 0.5s;
+}
+
+.readMore:hover {
+  border: 1px solid rgb(209, 159, 255);
+  color: rgb(209, 159, 255);
+}
+
+@media only screen and (max-width: 599px) {
+  .childContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .childContainer {
+    width: 90%;
+  }
+}
+.about {
+  margin-top: 180px;
 }
