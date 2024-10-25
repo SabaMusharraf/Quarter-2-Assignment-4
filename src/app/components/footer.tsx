@@ -14,19 +14,18 @@ export default function Footer (){
 
               <ul>
                 <li>Contact Us</li>
-               
+                <li><p className="para"><Image className="icon" src={webIcon} alt="webImage"></Image> 1234 sample street</p></li>
+                <li><p  className="para"><Image className="icon" src={mailIcon} alt="mailIcon"></Image> xyz@gamil.com</p></li>
+                <li><p  className="para"><Image className="icon" src={phoneIcon} alt="phoneIcon"></Image> 021-11-11-222</p></li>
+                <li><p  className="para"><Image className="icon" src={locationIcon} alt="locationIcon"></Image> House#111, Shaheed e Millat road, Karach</p></li>
+{/*                
 
-               <li> <Image className="icon" src={webIcon} alt="webIcon"></Image></li> 
-              <li><Image className="icon" src={mailIcon} alt="mailIcon"></Image> </li> 
-              <li><Image className="icon" src={phoneIcon} alt="phoneIcon"></Image></li>  
-             <li><Image className="icon" src={locationIcon} alt="locationIcon"></Image> </li>  
+               <p> <Image  src={webIcon} alt="webIcon"></Image> www.xyz.com</p>
+              <p><Image  src={mailIcon} alt="mailIcon"></Image> xyz@gmil.com </p>
+              <p><Image  src={phoneIcon} alt="phoneIcon"></Image> 021-11-222-333</p>  
+             <p><Image src={locationIcon} alt="locationIcon"> </Image> House#111, Shaheed e Millat road, Karachi</p>   */}
                 </ul>
-                <ul className="contacts">
-                    <li>www.xyz.com</li>
-                    <li>xyz@gmil.com</li>
-                    <li>021-11-222-333</li>
-                    <li>House#111, Shaheed e Millat road, Karachi</li>
-                </ul>
+            
               
             </ul>
         </div>
